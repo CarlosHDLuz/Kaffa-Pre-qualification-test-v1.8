@@ -38,6 +38,6 @@ int main() {
 			}
 	
 	cout << entrada << " is invalid" << '\n';
-	cout << "length: " << entrada.length() << '\n';
+//	cout << "length: " << entrada.length() << '\n';
 	return 0;
 }
