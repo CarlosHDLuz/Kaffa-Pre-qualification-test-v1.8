@@ -69,6 +69,7 @@ int main() {
 	int soma = 0;
 	int primeiroDigitoVerificador, segundoDigitoVerificador;
 
+
 	if ( !validateCNPJformat(entrada) ) {
 		cout << entrada << " is not valid!" << '\n';
 		return 0;
@@ -77,6 +78,20 @@ int main() {
 	// Remove anything that is not a number
 	string entradaFormated = onlyNumFormater(entrada);
 	//cout << entrada << '\n' << entradaFormated << '\n';
+
+	if (entradaFormated == "00000000000000" || 
+		entradaFormated == "11111111111111" || 
+		entradaFormated == "22222222222222" || 
+		entradaFormated == "33333333333333" || 
+		entradaFormated == "44444444444444" || 
+		entradaFormated == "55555555555555" || 
+		entradaFormated == "66666666666666" || 
+		entradaFormated == "77777777777777" || 
+		entradaFormated == "88888888888888" || 
+		entradaFormated == "99999999999999") {
+		cout << entrada << " is not a valid CNPJ!\n";
+		return 0;
+	}
 	
 
 	// ----- 1st Verification Number -----
