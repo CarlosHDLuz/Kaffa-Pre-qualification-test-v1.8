@@ -23,21 +23,26 @@ true if they cross, false otherwise
   0    5    10   15
 
 
-We can simplify the problem in two other simpler problems:
+It is possible to simplify the problem in two other simpler problems:
 
-a rectangle B intersects a rectangle A if and only if at least one vertex of B is within A or a vertex of A is within B
+a rectangle B intersects a rectangle A if and only if:
+I. at least one vertex of B is within A or a vertex of A is within B
+OR
+II. an edge of A crosses an edge of B
 
 a point (or vertex) of B is inside A if at least one vertex of B has its coordinates between the edges of A
 i.e.
+
+an edge of A crosses an edge of B if a point inside an edge of A is inside an edge of B as well
 
 */
 
 class Rectangle {
 	public:
-		int edgeXmin;	// left edge
-		int edgeXmax;	// right edge
-		int edgeYmin;	// bottom edge
-		int edgeYmax;	// top edge
+		int edgeXmin;	// bottom edge
+		int edgeXmax;	// top edge
+		int edgeYmin;	// left edge
+		int edgeYmax;	// right edge
 		Rectangle(int x1, int y1, int x2, int y2) {
 			if ( x1 <= x2 ) {
 				edgeXmin = x1;
@@ -105,6 +110,9 @@ bool didFirstintersectsSecond(Rectangle First, Rectangle Second) {
 		return true;
 
 	// if none of the above
+	
+	// 
+
 	return false;
 }
 
