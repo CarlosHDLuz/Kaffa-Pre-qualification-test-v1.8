@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:columnCount="2"
+
+    android:padding="8dp"
+    >
+
+    <Button
+        android:id="@+id/simple_todo_list"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_margin="8dp"
+
+        android:text="5) Simple TODO List"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/world_clock_button"
+        app:layout_constraintBottom_toTopOf="@id/ux_prototype_button"
+        />
+
+    <Button
+        android:id="@+id/world_clock_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_margin="8dp"
+
+        android:text="6) World Clock"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/simple_todo_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ux_prototype_button"
+        />
+
+    <Button
+        android:id="@+id/ux_prototype_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:text="9) UX - Prototype "
+
+        android:layout_margin="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/world_clock_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/world_clock_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</GridLayout>
