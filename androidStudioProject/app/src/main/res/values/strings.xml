@@ -10,5 +10,10 @@
     <string name="do_something">Do something</string>
     <string name="new_item_button_text">add</string>
     <string name="empty_or_blank_alert">Have you type something?</string>
+    <string name="project_name">Name</string>
+    <string name="project_deadline">Deadline</string>
+    <string name="google_maps_map">Google Maps Map</string>
+    <string name="send_button">Send button</string>
+    <string name="create_a_new_project">Create a New Project</string>
 
 </resources>

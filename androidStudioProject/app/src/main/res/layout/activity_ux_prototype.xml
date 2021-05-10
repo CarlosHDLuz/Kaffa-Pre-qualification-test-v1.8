@@ -6,4 +6,108 @@
     android:layout_height="match_parent"
     tools:context=".UxPrototypeActivity">
 
+    <TextView
+        android:id="@+id/project_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/create_a_new_project"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/project_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/project_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        android:layout_margin="16dp"
+
+        app:layout_constraintTop_toBottomOf="@id/project_label"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/project_name_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/project_label"
+        app:layout_constraintStart_toEndOf="@id/project_name_label"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:autofillHints="Project Name"
+        android:inputType="text"
+        android:labelFor="@id/project_name_label"
+        android:hint="@string/project_name"
+
+        />
+
+    <TextView
+        android:id="@+id/project_deadline_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/project_deadline"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        android:layout_margin="16dp"
+
+        app:layout_constraintTop_toBottomOf="@id/project_name_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/project_deadline_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/project_name_edittext"
+        app:layout_constraintStart_toEndOf="@id/project_deadline_label"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:labelFor="@id/project_deadline_label"
+        android:hint="@string/project_deadline"
+        android:autofillHints="false"
+        android:inputType="date" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="8dp"
+
+        android:src="@drawable/maps_image"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintTop_toBottomOf="@id/project_deadline_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/google_maps_map" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_send_24"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/send_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
