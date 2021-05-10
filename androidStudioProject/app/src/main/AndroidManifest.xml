@@ -16,7 +16,7 @@
         >
         <activity android:name=".UxPrototypeActivity" />
         <activity android:name=".WorldClockActivity" />
-        <activity android:name=".SimpleTodoListActivity" />
+        <activity android:name=".todo_list.SimpleTodoListActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

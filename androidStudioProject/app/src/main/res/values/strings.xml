@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Teste KAFFA</string>
+    <string name="todo_list">TODO List:</string>
+    <string name="todo_list_item_textview_placeholder">TODO List Item TextView</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_edittext_hint">Do something</string>
+    <string name="floating_action_button_icon">Floating Action Button Icon</string>
+    <string name="add_a_new_item">New</string>
+    <string name="do_something">Do something</string>
+    <string name="new_item_button_text">add</string>
+    <string name="empty_or_blank_alert">Have you type something?</string>
+
 </resources>

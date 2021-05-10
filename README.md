@@ -6,6 +6,8 @@ Resolução do Teste Técnico Kaffa para o Processo Seletivo Desenvolvedor, por 
 
 ## C/C++ Solutions
 
+Problems 1, 2, 3 and 4.
+
 ### Setup
 
 #### Windows Systems
@@ -14,9 +16,12 @@ Resolução do Teste Técnico Kaffa para o Processo Seletivo Desenvolvedor, por 
 
 2. Add `mingw/bin` to the System variables / path
 
+3. Using the command `cd \path\` in Windows Command Prompt, get in the solution directory 
+
+
 #### Unix Systems
 
-No setup needed
+1. Using the command `cd /path/` in _bash_, get in the solution directory
 
 ### Build
 
@@ -37,6 +42,8 @@ or
 
 ## Android/kotlin Solutions
 
+Problems 5, 6 and 9.
+
 ### Setup
 
 1. Install [Android Studio](https://developer.android.com/studio/install)
@@ -45,11 +52,13 @@ or
 ### Run
 
 1. Build and run the application/project
-
+2. In the smartphone or tablet, tap the problem button you want to run
 
 ------------
 
 ## Documentation only Solutions
+
+Problem 8.
 
 ### 8) Entity Relationship Diagram - Simple Order Manager
 [![erd](https://i.ibb.co/Sy24ZsZ/erd.png "erd")](https://i.ibb.co/Sy24ZsZ/erd.png "erd")
