@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1028731902933",
+    "project_id": "teste-kaffa-7840c",
+    "storage_bucket": "teste-kaffa-7840c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028731902933:android:6c3f0fbcc05460e5bb3b5c",
+        "android_client_info": {
+          "package_name": "luz.carlos.testekaffa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028731902933-5vr620ls43n9q66r5vi82e7spk8ntp6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnDQ9FXb2ctqfxR_gyc9DhMUVqxyR_O4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028731902933-5vr620ls43n9q66r5vi82e7spk8ntp6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
