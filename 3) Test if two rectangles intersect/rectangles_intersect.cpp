@@ -21,10 +21,11 @@ true if they cross, false otherwise
  1|...............
  0+­­­­----|----­­­­|­----­­­|
   0    5    10   15
-We can simplify the problem in two other simpler problems:
-a rectangle B intersects a rectangle A if and only if at least one vertex of B is within A or a vertex of A is within B
-a point (or vertex) of B is inside A if at least one vertex of B has its coordinates between the edges of A
-i.e.
+
+If a rectangle A intersects a rectangle B, 
+there is a rectangle C that is an intersection between A and B
+
+This solution try to find this rectangle C
 
 */
 
